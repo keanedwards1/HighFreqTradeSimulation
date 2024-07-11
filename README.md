@@ -64,7 +64,6 @@ Adjust the parameters in `config/config.yaml` to customize the simulation settin
 
 Run the unit tests to ensure all components are functioning correctly:
 
-	```sh
 	python -m unittest discover tests
 
 ## Contributing
