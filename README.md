@@ -1,126 +1,80 @@
-# High-Frequency Trading Simulation Project
+# High-Frequency Trading (HFT) Simulation Project
 
 ## Overview
-This project is a simplified high-frequency trading (HFT) simulation designed to help you understand the development and maintenance of trading systems, optimize performance, and implement trading algorithms. The project includes components for market data simulation, trading algorithm implementation, performance optimization, and backtesting.
 
-## Project Structure
-hft_simulation_project/
-│
-├── data/
-│ ├── market_data.csv # Sample market data files (if any)
-│
-├── src/
-│ ├── init.py # Initialize src as a package
-│ ├── data_generator.py # Code to generate market data
-│ ├── data_streamer.py # Code to stream market data
-│ ├── trading_algorithms.py # Implementation of trading algorithms
-│ ├── performance_optimizer.py # Code for performance optimization
-│ ├── backtester.py # Backtesting logic
-│ ├── utils.py # Utility functions
-│
-├── notebooks/
-│ ├── data_analysis.ipynb # Jupyter notebooks for data analysis and visualization
-│ ├── strategy_evaluation.ipynb # Jupyter notebooks for strategy evaluation
-│
-├── tests/
-│ ├── test_data_generator.py # Unit tests for data generation
-│ ├── test_trading_algorithms.py # Unit tests for trading algorithms
-│ ├── test_backtester.py # Unit tests for backtesting logic
-│
-├── config/
-│ ├── config.yaml # Configuration files for various parameters
-│
-├── scripts/
-│ ├── run_simulation.py # Script to run the full simulation
-│ ├── generate_market_data.py # Script to generate market data
-│ ├── run_backtest.py # Script to run backtests
-│
-├── README.md # Project overview and instructions
-├── requirements.txt # Python dependencies
-├── .gitignore # Git ignore file
+This project simulates a high-frequency trading environment, providing tools for data generation, trading algorithm implementation, backtesting, and performance optimization. It's designed to help researchers and traders develop and test HFT strategies in a controlled environment.
 
-markdown
-Copy code
+## Features
 
-## Getting Started
+- Synthetic market data generation
+- Real-time data streaming simulation
+- Implementation of various trading algorithms
+- Performance optimization tools
+- Comprehensive backtesting framework
+- Data analysis and visualization tools
 
-### Prerequisites
-- Python 3.x
-- Virtual environment tool (optional but recommended)
-
-### Setup
+## Setup
 
 1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/yourusername/hft_simulation_project.git
-   cd hft_simulation_project
-Set up virtual environment:
 
-sh
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install dependencies:
+	```sh
+	git clone https://github.com/yourusername/hft_simulation_project.git
+	cd hft_simulation_project
 
-sh
-Copy code
-pip install -r requirements.txt
-Usage
-Generating Market Data
-Generate synthetic market data using the data generator script.
+2. **Create a virtual environment (optional but recommended)**:
 
-sh
-Copy code
-python scripts/generate_market_data.py
-Running the Simulation
-Run the full trading simulation.
+	```sh
+	python -m venv venv
+	source venv/bin/activate #For Windows: venv\Scripts\activate
 
-sh
-Copy code
-python scripts/run_simulation.py
-Backtesting Trading Algorithms
-Run backtests on your trading algorithms.
+3. **Install the required dependencies**:
 
-sh
-Copy code
-python scripts/run_backtest.py
-Project Components
-Market Data Simulation
-File: src/data_generator.py
-Description: Generates synthetic market data for the simulation.
-Data Streaming
-File: src/data_streamer.py
-Description: Streams market data in real-time to simulate a live trading environment.
-Trading Algorithms
-File: src/trading_algorithms.py
-Description: Contains implementations of various trading algorithms.
-Performance Optimization
-File: src/performance_optimizer.py
-Description: Optimizes the performance of trading algorithms to reduce latency.
-Backtesting
-File: src/backtester.py
-Description: Contains logic for backtesting trading strategies against historical data.
-Notebooks
-Data Analysis: notebooks/data_analysis.ipynb
-Strategy Evaluation: notebooks/strategy_evaluation.ipynb
-Testing
-Unit Tests: Located in the tests directory. Use the following command to run tests:
-sh
-Copy code
-pytest
-Configuration
-File: config/config.yaml
-Description: Contains configuration parameters for the project.
-Contributing
-Contributions are welcome! Please fork the repository and submit pull requests.
+	```sh
+	pip install -r requirements.txt
 
-License
-This project is licensed under the MIT License.
 
-Contact
-For any questions or feedback, please contact [your email].
+## Usage
 
-vbnet
-Copy code
+1. **Generate market data**:
 
-Feel free to customize the `README.md` as needed to better fit your project and any a
+	```sh
+	python scripts/generate_market_data.py
+
+2. **Run a simulation**:
+
+	```sh
+	python scripts/run_backtest.py
+
+3. **Perform backtesting**:
+
+	```sh
+	python scripts/run_backtest.py
+
+4. **For data analysis and visualization, open the Jupyter notebooks in the `notebooks/` directory**:
+
+	```sh
+	jupyter notebook notebooks/
+
+
+## Configuration
+
+Adjust the parameters in `config/config.yaml` to customize the simulation settings, data generation parameters, and algorithm configurations.
+
+## Testing
+
+Run the unit tests to ensure all components are functioning correctly:
+
+	```sh
+	python -m unittest discover tests
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- [List any libraries, papers, or resources that significantly influenced this project]
